@@ -1,0 +1,77 @@
+/*ui container
+
+.ui.menu {
+    border-radius: 0px !important;
+    min-height: 100vh !important;
+    border: 0px !important;
+    box-shadow: none !important;
+    background-color: #252631 !important;
+}
+
+.ui.menu .item{
+    padding: 8px !important;
+}
+.ui.button .icon{
+    margin-left: 5px !important;
+    margin-right: 15px !important;
+    background-color: transparent !important; 
+}
+.btnMenu{
+    width: 100% !important;
+    height: 50px;
+    color: white !important;
+    text-align: left !important;
+    margin: 0 !important;
+    background-color: transparent !important;
+}
+.btnMenu:hover{
+    color: white !important;
+    background-color:rgba(186,186,186,0.4) !important;
+}
+
+.btnMenu:focus{
+    color: white !important;
+    background-color:#444bf8 !important;
+}
+
+.ui.divider{
+    margin-bottom: 10px !important;
+}
+.logo{
+    height: 60px;
+    width: 100% !important;
+}
+
+.ui.vertical.menu .item{
+
+    display:flex !important;
+    align-items: center !important;
+}
+.ui.divider{
+    height: 2px !important;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+
+.menu{
+    width: 240px !important;
+    height: 100vh !important;
+}
+
+*/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#root,
+.App,
+.ui.grid{
+  height: 100vh !important;
+  margin: 0 !important;
+  padding:0 !important;
+}
+
