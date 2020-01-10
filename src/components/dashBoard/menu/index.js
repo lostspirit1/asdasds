@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
-import {  Button, Icon } from 'semantic-ui-react';
+import {  Button, Icon, Grid} from 'semantic-ui-react';
 import './style.css';
+
+import { SideBar } from './styles/item/index';
+import { Grid_main,Grid_menu,Grid_content  } from './styles/containers/index';
+import { Logo } from './styles/item/index';
+import Header from '../header/index';
 
 
 function DashBoardMenu() {
@@ -10,8 +15,15 @@ function DashBoardMenu() {
     setOpen(!open);
   };
   return (
-    <>
-    </>
+    <Grid_main>
+      <Header/> 
+      <Grid_menu desktop={open ? '12.5%' : '3.5%'} mobile= {open ? '31.25%' : '12.5%'} wdscreen = { open? '80%' : '2%'}>
+
+      </Grid_menu>
+      <Grid_content desktop={open ? '87.5%' : '96.5%'} mobile = { open ? '68.75%' : '87.5%' }>
+      </Grid_content>
+    </Grid_main>
+
   //   <GridWrapper>
   //   <GridMenuWrapper desktop={open ? '12.5%' : '3.5%'} mobile= {open ? '31.25%' : '12.5%'} wdscreen = { open? '80%' : '2%'} >
   //   <Menu style = {{position:'absolute'}}>

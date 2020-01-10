@@ -7,7 +7,7 @@ export const Grid_main = styled(Grid)`
 `;
 
 export const Grid_menu = styled(Grid.Column)`
-  ${Grid_wrap}
+  ${GridColumn_menu}
   @media only screen and (max-width: 767px) {
     width: ${props => props.mobile} !important;
   }
@@ -22,7 +22,7 @@ export const Grid_menu = styled(Grid.Column)`
 `;
 
 export const Grid_content = styled(Grid.Column)`
-  ${Grid_wrap}
+  ${GridColumn_content}
   @media only screen and (max-width: 767px) {
     width: ${props => props.mobile} !important;
   }
