@@ -2,11 +2,11 @@ import { Grid } from "semantic-ui-react";
 import styled from "styled-components";
 import { Grid_wrap, GridColumn_menu, GridColumn_content } from "./styles";
 
-export const Grid_main = styled(Grid)`
+export const GridMain = styled(Grid)`
   ${Grid_wrap}
 `;
 
-export const Grid_menu = styled(Grid.Column)`
+export const GridMenu = styled(Grid.Column)`
   ${GridColumn_menu}
   @media only screen and (max-width: 767px) {
     width: ${props => props.mobile} !important;
@@ -21,7 +21,7 @@ export const Grid_menu = styled(Grid.Column)`
     width: ${props => props.desktop} !important;
 `;
 
-export const Grid_content = styled(Grid.Column)`
+export const GridContent = styled(Grid.Column)`
   ${GridColumn_content}
   @media only screen and (max-width: 767px) {
     width: ${props => props.mobile} !important;

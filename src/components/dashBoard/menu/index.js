@@ -1,28 +1,23 @@
-import React, { useState } from 'react';
-import {  Button, Icon, Grid} from 'semantic-ui-react';
+import React from 'react';
 import './style.css';
-
-import { SideBar } from './styles/item/index';
-import { Grid_main,Grid_menu,Grid_content  } from './styles/containers/index';
-import { Logo } from './styles/item/index';
+import { GridMain,GridMenu,GridContent  } from './styles/containers/index';
 import Header from '../header/index';
+import { Button } from 'semantic-ui-react';
+import { useSelector } from "react-redux";
 
-
-function DashBoardMenu() {
-  const [open, setOpen] = useState(true); // declare new state variable "open" with setter
-  const handleClick = e => {
-    e.preventDefault();
-    setOpen(!open);
-  };
+const MenuDashBoard = () => {
+  const toggleMenu = useSelector(state => state.menuStatus.menuStatus);
   return (
-    <Grid_main>
+    <GridMain>
       <Header/> 
-      <Grid_menu desktop={open ? '12.5%' : '3.5%'} mobile= {open ? '31.25%' : '12.5%'} wdscreen = { open? '80%' : '2%'}>
-
-      </Grid_menu>
-      <Grid_content desktop={open ? '87.5%' : '96.5%'} mobile = { open ? '68.75%' : '87.5%' }>
-      </Grid_content>
-    </Grid_main>
+      <GridMenu desktop={toggleMenu ? '12.5%' : '3.5%'} mobileGrid = {toggleMenu ? '31.25%' : '12.5%'} wdscreen = { toggleMenu? '80%' : '2%'}>
+      </GridMenu>
+      <GridContent desktop={toggleMenu ? '87.5%' : '96.5%'} mobileGrid = { toggleMenu ? '68.75%' : '87.5%' }>
+      <Button >
+      </Button>
+      <p>a </p>
+      </GridContent>
+    </GridMain>
 
   //   <GridWrapper>
   //   <GridMenuWrapper desktop={open ? '12.5%' : '3.5%'} mobile= {open ? '31.25%' : '12.5%'} wdscreen = { open? '80%' : '2%'} >
@@ -81,4 +76,4 @@ function DashBoardMenu() {
 //     </Container> */}   
 
 
-export default DashBoardMenu;
+export default MenuDashBoard;

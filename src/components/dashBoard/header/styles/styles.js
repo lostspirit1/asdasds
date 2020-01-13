@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import logo from '../../../../assets/images/agua.svg';  
 
 export const wrapStyle = css`
     min-height: 55px;
@@ -9,21 +8,31 @@ export const wrapStyle = css`
     padding: 0 !important;
 `;
 
-export const contentLogo = css`
+export const content = css`
     width:240px;
     height:100%;
     background-color: rgba(31,30,30,.12)!important;
     line-height: 52px;
-    padding: 1rem;
+    padding: 10px;
+    transition: all .3s;
+`;
+
+export const LogoImage = css`
+    height:100%;
+`;
+
+export const content_item = css`
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    transition: all .3s;
+    height: 100%;
+    width:100%;
 `;
 
-export const LogoImage = css `
-    width:50px;
-    height:40px;
-    background: url(${logo}) ;
+export const barMenu = css`
+    color: #000 !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
 `;
